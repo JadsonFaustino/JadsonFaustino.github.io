@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Escalador - Coroinhas</title>
+</head>
+<body>
+		
+	<script type="text/javascript">
+		var coroinhas = [
+			//{nome: "Jadson", funcoes: "vanct"},
+			{nome: "Jaqueline", funcoes: "vanct"},
+			{nome: "Guilherme", funcoes: "vanct"},
+			{nome: "Joelma", funcoes: "vanct"},
+			{nome: "Ellder", funcoes: "vanct"},
+			{nome: "Ilário", funcoes: "vanct"},
+			{nome: "Hamilton", funcoes: "vanct"},
+			{nome: "Ângelo", funcoes: "vanct"},
+			{nome: "Matheus", funcoes: "vanct"},
+			{nome: "Yuri Lima", funcoes: "vanct"},
+			{nome: "Alan Martins", funcoes: "van"},
+			{nome: "Alan Sousa", funcoes: "vanct"},
+			{nome: "Pedro", funcoes: "van"},
+			{nome: "Camilo", funcoes: "van"},
+			{nome: "César", funcoes: "vanct"},
+			{nome: "Fernanda", funcoes: "van"},
+			{nome: "Franciele", funcoes: "van"},
+			{nome: "Giulia", funcoes: "vanct"},
+			{nome: "Hellen Maria", funcoes: "van"},
+			{nome: "Iego", funcoes: "van"},
+			{nome: "Isadora", funcoes: "van"},
+			{nome: "Jaziel", funcoes: "vanct"},
+			{nome: "Yasmin Costa", funcoes: "van"},
+			{nome: "Yasmin Sousa", funcoes: "van"},
+			{nome: "Karoline", funcoes: "van"},
+			{nome: "Kauã", funcoes: "van"},
+			{nome: "Letícia Abreu", funcoes: "van"},
+			{nome: "Letícia Torres", funcoes: "vanct"},
+			{nome: "Levy", funcoes: "van"},
+			{nome: "Cecília", funcoes: "van"},
+			{nome: "Eduarda Paiva", funcoes: "van"},
+			{nome: "Oscar", funcoes: "vanct"},
+			{nome: "Yuri Alves", funcoes: "van"},
+			{nome: "Yarllei", funcoes: "van"},
+			{nome: "Eduarda Oliveira", funcoes: "van"},
+			{nome: "Pablo", funcoes: "van"},
+			{nome: "Paulo Eduardo", funcoes: "van"},
+			{nome: "Pedro Victor", funcoes: "van"},
+			{nome: "Rebeca", funcoes: "van"},
+			{nome: "Stacy", funcoes: "van"},
+			{nome: "Warleson", funcoes: "van"},
+			{nome: "Sofia", funcoes: "van"}
+		];
+		
+		function aleatorio(lista, funcao){
+			while (1){
+				let indice_aleatorio = Math.floor(Math.random()*lista.length);
+				let coroinha = lista[indice_aleatorio];
+				if (coroinha.funcoes.indexOf(funcao) > -1){
+					lista.splice(indice_aleatorio, 1);
+					return coroinha.nome;
+				}
+			}
+		}
+
+		function gerar_escala(tipo){
+			let escala = "";
+			let lista = [...coroinhas]; // copia array
+			c_vela1 = aleatorio(lista, "v");
+			c_vela2 = aleatorio(lista, "v");
+			c_cruz = aleatorio(lista, "c");
+
+			if (tipo != "simples"){
+				c_turibulo = aleatorio(lista, "t");
+				c_naveta = aleatorio(lista, "n");
+				escala += "<b>TURÍBULO:</b> " + c_turibulo + "<br><b>NAVETA:</b> " + c_naveta + "<br>";
+				if (tipo == "maxima"){
+					c_aux1 = aleatorio(lista, "a");
+					c_aux2 = aleatorio(lista, "a");
+					escala += "<b>AUX.:</b> " + c_aux1 + " e " + c_aux2 + "<br>";
+				}
+			}
+
+			escala += "<b>VELAS:</b> " + c_vela1 + " e " + c_vela2 + "<br><b>CRUZ:</b> " + c_cruz;
+
+			return escala;
+		}
+
+		function gerar_escalas(tipo){
+			let num = document.getElementById("numero_escalas").value;
+			let escala = "";
+			if (tipo == "domingo"){
+				for (var i = 0; i < num; i++) {
+					escala += domingo();
+					escala += "<br><br>";
+				}
+			}else{
+				for (var i = 0; i < num; i++) {
+					escala += gerar_escala(tipo);
+					escala += "<br><br>";
+				}
+			}
+			mostrar(escala);
+		}
+
+		function mostrar(escala){
+			var saida_escala = document.getElementById("saida_escala");
+			saida_escala.innerHTML = escala;
+		}
+
+		function copiar(escala){
+			escala_whatsapp = escala.replaceAll("<br>", "\n");
+			escala_whatsapp = escala_whatsapp.replaceAll("<b>", "*");
+			escala_whatsapp = escala_whatsapp.replaceAll("</b>", "*");
+
+			navigator.clipboard.writeText(escala_whatsapp);
+		}
+
+		function domingo(){
+			let escala = "";
+			escala += gerar_escala("simples") + "<br><br>";
+			escala += gerar_escala("completa") + "<br>";
+			return escala;
+		}
+	</script>
+
+	<label>Nº de Escalas:</label>
+	<input type="number" name="numero_escalas" id="numero_escalas" value="1" min="1">
+	<br>
+
+	<label>Tipo de Escala:</label>
+	<button onclick="gerar_escalas('simples')">Simples</button>
+	<button onclick="gerar_escalas('completa')">Completa</button>
+	<button onclick="gerar_escalas('maxima')">Máxima</button>
+	<button onclick="gerar_escalas('domingo')">Domingo</button>
+	<br>
+	<br>
+	<hr>
+
+	<div id="saida_escala"></div>
+
+</body>
+</html>
