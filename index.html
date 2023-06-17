@@ -1,146 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Jadson Faustino - Presentation Page</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Escalador - Coroinhas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
+	<header>
+		<h1>Jadson Faustino</h1>
+		<img src="photo.jfif" alt="Jadson Faustino's Photo">
+	</header>
 
-	<a href="./Carta/index.html">Carta</a>
-		
-	<script type="text/javascript">
-		var coroinhas = [
-			//{nome: "Jadson", funcoes: "vanct"},
-			{nome: "Jaqueline", funcoes: "vanct"},
-			{nome: "Guilherme", funcoes: "vanct"},
-			{nome: "Joelma", funcoes: "vanct"},
-			{nome: "Ellder", funcoes: "vanct"},
-			{nome: "Ilário", funcoes: "vanct"},
-			{nome: "Hamilton", funcoes: "vanct"},
-			{nome: "Ângelo", funcoes: "vanct"},
-			{nome: "Matheus", funcoes: "vanct"},
-			{nome: "Yuri Lima", funcoes: "vanct"},
-			{nome: "Alan Martins", funcoes: "van"},
-			{nome: "Alan Sousa", funcoes: "vanct"},
-			{nome: "Pedro", funcoes: "van"},
-			{nome: "Camilo", funcoes: "van"},
-			{nome: "César", funcoes: "vanct"},
-			{nome: "Fernanda", funcoes: "van"},
-			{nome: "Franciele", funcoes: "van"},
-			{nome: "Giulia", funcoes: "vanct"},
-			{nome: "Hellen Maria", funcoes: "van"},
-			{nome: "Iego", funcoes: "van"},
-			{nome: "Isadora", funcoes: "van"},
-			{nome: "Jaziel", funcoes: "vanct"},
-			{nome: "Yasmin Costa", funcoes: "van"},
-			{nome: "Yasmin Sousa", funcoes: "van"},
-			{nome: "Karoline", funcoes: "van"},
-			{nome: "Kauã", funcoes: "van"},
-			{nome: "Letícia Abreu", funcoes: "van"},
-			{nome: "Letícia Torres", funcoes: "vanct"},
-			{nome: "Levy", funcoes: "van"},
-			{nome: "Cecília", funcoes: "van"},
-			{nome: "Eduarda Paiva", funcoes: "van"},
-			{nome: "Oscar", funcoes: "vanct"},
-			{nome: "Yuri Alves", funcoes: "van"},
-			{nome: "Yarllei", funcoes: "van"},
-			{nome: "Eduarda Oliveira", funcoes: "van"},
-			{nome: "Pablo", funcoes: "van"},
-			{nome: "Paulo Eduardo", funcoes: "van"},
-			{nome: "Pedro Victor", funcoes: "van"},
-			{nome: "Rebeca", funcoes: "van"},
-			{nome: "Stacy", funcoes: "van"},
-			{nome: "Warleson", funcoes: "van"},
-			{nome: "Sofia", funcoes: "van"}
-		];
-		
-		function aleatorio(lista, funcao){
-			while (1){
-				let indice_aleatorio = Math.floor(Math.random()*lista.length);
-				let coroinha = lista[indice_aleatorio];
-				if (coroinha.funcoes.indexOf(funcao) > -1){
-					lista.splice(indice_aleatorio, 1);
-					return coroinha.nome;
-				}
-			}
-		}
+	<nav>
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#social-networks">Social Networks</a></li>
+		</ul>
+	</nav>
 
-		function gerar_escala(tipo){
-			let escala = "";
-			let lista = [...coroinhas]; // copia array
-			c_vela1 = aleatorio(lista, "v");
-			c_vela2 = aleatorio(lista, "v");
-			c_cruz = aleatorio(lista, "c");
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>I am currently an undergraduate student in Computer Engineering at the Federal University of Ceará (UFC)
+				and I am also a computer technician. In my academic experience, I have been involved in research
+				projects in Image Processing, Computer Vision, Data Visualization, and Data Science. Additionally, I
+				have experience in Web Development and have participated in research, extension, and teaching
+				scholarships. I like: learning new things, science, games, programming, music, meeting new cultures and languages.</p>
+		</section>
 
-			if (tipo != "simples"){
-				c_turibulo = aleatorio(lista, "t");
-				c_naveta = aleatorio(lista, "n");
-				escala += "<b>TURÍBULO:</b> " + c_turibulo + "<br><b>NAVETA:</b> " + c_naveta + "<br>";
-				if (tipo == "maxima"){
-					c_aux1 = aleatorio(lista, "a");
-					c_aux2 = aleatorio(lista, "a");
-					escala += "<b>AUX.:</b> " + c_aux1 + " e " + c_aux2 + "<br>";
-				}
-			}
+		<section id="experience">
+			<h2>Experience</h2>
+			<ul>
+				<li>Intern in Network and Computer Maintenance at the Municipality of Hidrolândia, CE</li>
+				<li>Scholarship holder of the Programa de Educação Tutorial (PET), by the Computer Engineering course at the Universidade Federal of Ceará (UFC)</li>
+				<li>Freelance Web Developer</li>
+				<li>Video Editor</li>
+				<li>Mathematics Teacher</li>
+				<li>Web Development Teacher</li>
+			</ul>
+		</section>
 
-			escala += "<b>VELAS:</b> " + c_vela1 + " e " + c_vela2 + "<br><b>CRUZ:</b> " + c_cruz;
+		<section id="projects">
+			<h2>Some Projects on GitHub</h2>
+			<ul>
+				<li><a href="https://github.com/JadsonFaustino/PokemonGallery">Pokemon Gallery with JS</a></li>
+				<li><a href="https://github.com/JadsonFaustino/FaceAndEyeDetection">Face and Eye Detection in Python</a>
+				</li>
+				<li><a href="https://github.com/JadsonFaustino/EDA-Data-Science-Salary">Exploratory Data Analysis: Data
+						Science Salary</a></li>
+				<li><a href="https://github.com/JadsonFaustino/Spiral-Data">Data Visualization: Spiral Data</a></li>
+				<li><a href="https://github.com/JadsonFaustino/Spherical-Clusters-with-kmean">Data Visualization:
+						Spherical Clusters with K-Means in MATLAB</a></li>
+				<li><a href="https://github.com/JadsonFaustino/Security-Access-Control-System">Access Control System
+						with Cards and Fingerprints using ESP32</a></li>
+			</ul>
+		</section>
 
-			return escala;
-		}
+		<section id="social-networks">
+			<h2>Social Networks</h2>
+			<ul>
+			  <li><a href="https://www.linkedin.com/in/jadson-faustino/">LinkedIn</a></li>
+			  <li><a href="https://github.com/JadsonFaustino">GitHub</a></li>
+			  <li><a href="https://www.instagram.com/jadson.faustino/">Instagram</a></li>
+			</ul>
+		</section>
+	</main>
 
-		function gerar_escalas(tipo){
-			let num = document.getElementById("numero_escalas").value;
-			let escala = "";
-			if (tipo == "domingo"){
-				for (var i = 0; i < num; i++) {
-					escala += domingo();
-					escala += "<br><br>";
-				}
-			}else{
-				for (var i = 0; i < num; i++) {
-					escala += gerar_escala(tipo);
-					escala += "<br><br>";
-				}
-			}
-			mostrar(escala);
-		}
-
-		function mostrar(escala){
-			var saida_escala = document.getElementById("saida_escala");
-			saida_escala.innerHTML = escala;
-		}
-
-		function copiar(escala){
-			escala_whatsapp = escala.replaceAll("<br>", "\n");
-			escala_whatsapp = escala_whatsapp.replaceAll("<b>", "*");
-			escala_whatsapp = escala_whatsapp.replaceAll("</b>", "*");
-
-			navigator.clipboard.writeText(escala_whatsapp);
-		}
-
-		function domingo(){
-			let escala = "";
-			escala += gerar_escala("simples") + "<br><br>";
-			escala += gerar_escala("completa") + "<br>";
-			return escala;
-		}
-	</script>
-
-	<label>Nº de Escalas:</label>
-	<input type="number" name="numero_escalas" id="numero_escalas" value="1" min="1">
-	<br>
-
-	<label>Tipo de Escala:</label>
-	<button onclick="gerar_escalas('simples')">Simples</button>
-	<button onclick="gerar_escalas('completa')">Completa</button>
-	<button onclick="gerar_escalas('maxima')">Máxima</button>
-	<button onclick="gerar_escalas('domingo')">Domingo</button>
-	<br>
-	<br>
-	<hr>
-
-	<div id="saida_escala"></div>
-
+	<footer>
+		<p>&copy; 2023 Jadson Faustino. All rights reserved.</p>
+	</footer>
 </body>
+
 </html>
