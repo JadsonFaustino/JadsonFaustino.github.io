@@ -6,85 +6,226 @@
 	<title>Jadson Faustino - Presentation Page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-	<header>
-		<h1>Jadson Faustino</h1>
-		<img src="photo.jfif" alt="Jadson Faustino's Photo">
-	</header>
+    <div id="guide-arrow">
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
 
-	<nav>
-		<ul>
-			<li><a href="#presentation">Presentation</a></li>
-			<li><a href="#experience">Experience</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#social-networks">Social Networks</a></li>
-		</ul>
-	</nav>
+    <section id="welcome-section">
+        <p class="message">
+            Hello there, I'm <strong>Jadson Faustino</strong>, and welcome to my page!
+        </p>
+        <label>Within this space, you'll discover some of my projects and my fascination with programming, science, and research. To get to know me better, just keep scrolling down the page or choose any section below.</label>
 
-	<main>
-		<section id="presentation">
-			<h2>Presentation</h2>
-			<p>I am currently an R&D intern in Computer Vision and Robotics at Daedalus. At the same time, I am majoring in Computer Engineering at the Federal University of Ceará (UFC)
-				and I am also a computer technician. In my academic experience, I have been involved in research
-				projects in Image Processing, Computer Vision, Data Visualization, Data Science and IoT. Additionally, I
-				have experience in Web Development and have participated in research, extension, and teaching
-				scholarships. I like: learning new things, science, games, programming, music, meeting new cultures and languages.</p>
-		</section>
+        <nav id="menu-sections">
+            <a href="#presentation">Presentation</a>
+            <a href="#experience">Experience</a>
+            <a href="#areas">Knowledge Areas</a>
+            <a href="#programming">Programming Languages</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#projects">Projects</a>
+            <a href="#social-networks">Social Networks</a>
+        </nav>
+    </section>
 
-		<section id="experience">
-			<h2>Experience</h2>
-			<ul>
-				<li>R&D intern in Computer Vision and Robotics at Daedalus (2023 - Today)</li>
-				<li>Web Development Teacher (2022 - Today)</li>
-				<li>Scholarship holder of the Programa de Educação Tutorial (PET), by the Computer Engineering course at the Universidade Federal of Ceará (2020 - Today)</li>
-				<li>Mathematics Teacher (2022)</li>
-				<li>Freelance Web Developer (2020-2021)</li>
-				<li>Video Editor (2020-2021)</li>
-				<li>Guitar Teacher (2019)</li>
-				<li>Intern in Network and Computer Maintenance at the Municipality of Hidrolândia-CE (2018)</li>
-			</ul>
-		</section>
+    <section id="presentation">
+        <h2>Presentation</h2>
 
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>Knowledge Areas: Computer Vision, Image Processing, Data Science, WEB Development, IoT, Eletronics, Robotics, Game Development.</li>
-				<li>Programming Languages: Python, JavaScript, TypeScript, PHP, C, C++, C#, Java, MATLAB, Scilab, Pascal, Assembly</li>
-				<li>Technologies: Git / GitHub, Docker, ROS, Arduino / ESP32, Linux / Windows</li>
-			</ul>
-		</section>
+        <div class="section-wrap">
+            <img src="photo.jfif" alt="Jadson Faustino's Photo">
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <td>Jadson Faustino Mororó</td>
+                </tr>
+                <tr>
+                    <th>Birthday:</th>
+                    <td>April 20, 2001</td>
+                </tr>
+                <tr>
+                    <th>Lives in:</th>
+                    <td>CE, Brazil</td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td>jadsoneeep@gmail.com</td>
+                </tr>
+            </table>
+        </div>
 
-		<section id="projects">
-			<h2>Some Projects on GitHub</h2>
-			<ul>
-				<li><a href="https://github.com/JadsonFaustino/PokemonGallery">Pokemon Gallery with JS</a></li>
-				<li><a href="https://github.com/JadsonFaustino/FaceAndEyeDetection">Face and Eye Detection in Python</a>
-				</li>
-				<li><a href="https://github.com/JadsonFaustino/EDA-Data-Science-Salary">Exploratory Data Analysis: Data
-						Science Salary</a></li>
-				<li><a href="https://github.com/JadsonFaustino/Spiral-Data">Data Visualization: Spiral Data</a></li>
-				<li><a href="https://github.com/JadsonFaustino/Spherical-Clusters-with-kmean">Data Visualization:
-						Spherical Clusters with K-Means in MATLAB</a></li>
-				<li><a href="https://github.com/JadsonFaustino/Security-Access-Control-System">Access Control System
-						with Cards and Fingerprints using ESP32</a></li>
-			</ul>
-		</section>
+        <p>I am currently an R&D intern in Computer Vision and Robotics at <a href="https://www.daedalus-tech.com/" target="_blank">Daedalus</a>. At the same time, I am majoring in Computer Engineering at the Federal University of Ceará (UFC)
+            and I am also a computer technician. In my academic experience, I have been involved in research
+            projects in Image Processing, Computer Vision, Data Visualization, Data Science and IoT. Additionally, I
+            have experience in Web Development and have participated in research, extension, and teaching
+            scholarships. I like: learning new things, science, games, programming, music, meeting new cultures and languages.</p>
+    </section>
 
-		<section id="social-networks">
-			<h2>Social Networks</h2>
-			<ul>
-			  <li><a href="https://www.linkedin.com/in/jadson-faustino/">LinkedIn</a></li>
-			  <li><a href="https://github.com/JadsonFaustino">GitHub</a></li>
-			  <li><a href="https://www.instagram.com/jadson.faustino/">Instagram</a></li>
-			</ul>
-		</section>
-	</main>
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>R&D intern in Computer Vision and Robotics at Daedalus (2023 - Today)</li>
+            <li>Web Development Teacher (2022 - Today)</li>
+            <li>Scholarship holder of the Programa de Educação Tutorial (PET), by the Computer Engineering course at the Universidade Federal of Ceará (2020 - Today)</li>
+            <li>Mathematics Teacher (2022)</li>
+            <li>Freelance Web Developer (2020-2021)</li>
+            <li>Video Editor (2020-2021)</li>
+            <li>Guitar Teacher (2019)</li>
+            <li>Intern in Network and Computer Maintenance at the Municipality of Hidrolândia-CE (2018)</li>
+        </ul>
+    </section>
+
+    <section id="areas">
+        <h2>Knowledge Areas</h2>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <i class="fa-solid fa-eye"></i>
+                <label>Computer Vision</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-solid fa-image"></i>
+                <label>Image Processing</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-solid fa-chart-pie"></i>
+                <label>Data Science</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-solid fa-globe"></i>
+                <label>WEB Development</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-solid fa-wifi"></i>
+                <label>IoT</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-solid fa-bolt"></i>
+                <label>Electronic</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-solid fa-robot"></i>
+                <label>Robotics</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-solid fa-gamepad"></i>
+                <label>Game Development</label>
+            </div>    
+        </div>
+    </section>
+
+    <section id="programming">
+        <h2>Programming Languages</h2>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(9.84615,9.84615)"><path d="M12.875,1.03125c-1.01953,0.00391 -2.01953,0.10156 -2.875,0.25c-2.51953,0.44141 -2.96875,1.36328 -2.96875,3.0625v2.625h6v1.0625h-8.84375c-1.73047,0 -3.27344,1.04297 -3.75,3c-0.54687,2.24219 -0.57031,3.625 0,5.96875c0.42578,1.74219 1.45703,3 3.1875,3h2.375v-3.28125c0,-1.94531 1.69922,-3.75 3.71875,-3.75h5.25c1.65625,0 3,-1.35547 3,-3v-5.625c0,-1.59766 -1.38281,-2.79297 -3,-3.0625c-1.02344,-0.16797 -1.07422,-0.25391 -2.09375,-0.25zM9.5,3.375c0.61328,0 1.125,0.50391 1.125,1.125c0,0.61719 -0.51172,1.125 -1.125,1.125c-0.61719,0 -1.125,-0.50781 -1.125,-1.125c0,-0.62109 0.50781,-1.125 1.125,-1.125zM19,7v3.28125c0,1.94531 -1.69922,3.75 -3.71875,3.75h-5.25c-1.65625,0 -3,1.35547 -3,3v5.625c0,1.59766 1.38281,2.79688 3,3.0625c1.02344,0.16797 1.07422,0.25781 2.09375,0.25c1.01953,-0.00391 2.01953,-0.10156 2.875,-0.25c2.51953,-0.4375 2.96875,-1.36328 2.96875,-3.0625v-2.625h-6v-1.0625h8.84375c1.73047,0 3.27344,-1.04297 3.75,-3c0.54688,-2.24219 0.57031,-3.625 0,-5.96875c-0.42578,-1.74219 -1.45703,-3 -3.1875,-3zM15.5,21.375c0.61719,0 1.125,0.50781 1.125,1.125c0,0.62109 -0.50781,1.125 -1.125,1.125c-0.61328,0 -1.125,-0.50391 -1.125,-1.125c0,-0.61719 0.51172,-1.125 1.125,-1.125z"></path></g></g>
+                    </svg>
+                <label>Python</label>
+            </div>    
+            <div class="gallery-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M43.33594,4h-36.66797c-1.47266,0 -2.66797,1.19531 -2.66797,2.66797v36.66406c0,1.47266 1.19531,2.66797 2.66797,2.66797h36.66406c1.47266,0 2.66797,-1.19531 2.66797,-2.66406v-36.66797c0,-1.47266 -1.19531,-2.66797 -2.66406,-2.66797zM27,36.18359c0,3.99609 -2.34375,5.81641 -5.76562,5.81641c-3.09375,0 -5.32422,-2.07422 -6.23437,-4l3.14453,-1.90234c0.60547,1.07422 1.52734,1.90234 2.85547,1.90234c1.26953,0 2,-0.49609 2,-2.42578v-12.57422h4zM35.67578,42c-3.54297,0 -5.55469,-1.78516 -6.67578,-4l3,-2c0.81641,1.33594 1.70703,2.61328 3.58984,2.61328c1.58203,0 2.41016,-0.78906 2.41016,-1.88281c0,-1.30469 -0.85937,-1.76953 -2.59766,-2.53125l-0.95312,-0.41016c-2.75391,-1.17187 -4.58594,-2.64062 -4.58594,-5.75c0,-2.85937 2.18359,-5.03906 5.58984,-5.03906c2.42578,0 4.16797,0.84375 5.42578,3.05469l-2.96875,1.91016c-0.65625,-1.17578 -1.35937,-1.63672 -2.45703,-1.63672c-1.11719,0 -1.82422,0.71094 -1.82422,1.63672c0,1.14453 0.70703,1.60547 2.34375,2.31641l0.95313,0.41016c3.24609,1.38672 5.07422,2.80469 5.07422,5.99219c0,3.43359 -2.69922,5.31641 -6.32422,5.31641z"></path></g></g>
+                    </svg>
+                <label>JavaScript/TS</label>
+            </div>    
+            <div class="gallery-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,12c-13.45703,0 -24,5.71094 -24,13c0,7.28906 10.54297,13 24,13c13.45703,0 24,-5.71094 24,-13c0,-7.28906 -10.54297,-13 -24,-13zM22.50781,16h2.62109l-0.83203,4h2.33984c1.48438,0 2.48047,0.20703 3.04688,0.72656c0.55469,0.51172 0.72266,1.35156 0.5,2.49609l-1.03906,4.77734h-2.66406l0.95703,-4.41797c0.11719,-0.60547 0.07031,-1.02734 -0.13281,-1.25c-0.20312,-0.22266 -0.64844,-0.33203 -1.31641,-0.33203h-2.09766l-1.26562,6h-2.625zM11,20h5.33203c2.54297,0 4.08203,1.70313 3.48047,4.24609c-0.69922,2.95313 -2.57422,3.75391 -6.01953,3.75391h-1.64844l-0.52344,3h-2.64844zM32,20h5.33203c2.54297,0 4.08203,1.70313 3.48047,4.24609c-0.69922,2.95313 -2.57422,3.75391 -6.01953,3.75391h-1.64844l-0.52344,3h-2.64844zM13.26953,22l-0.75391,4h1.71094c1.48047,0 2.85547,-0.16797 3.08594,-2.375c0.08594,-0.85547 -0.26953,-1.625 -1.98047,-1.625zM34.26953,22l-0.75391,4h1.71094c1.48047,0 2.85547,-0.16797 3.08594,-2.375c0.08594,-0.85547 -0.26953,-1.625 -1.98047,-1.625z"></path></g></g>
+                    </svg>
+                <label>PHP</label>
+            </div>    
+            <div class="gallery-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M43.91016,12.00391l-16.83984,-9.46484c-1.27734,-0.71484 -2.86328,-0.71484 -4.14062,0l-16.83984,9.46484c-1.28906,0.72266 -2.08984,2.07813 -2.08984,3.53125v18.92969c0,1.45313 0.80078,2.80859 2.08984,3.53125l16.83984,9.46484c0.64063,0.35938 1.35547,0.53906 2.07031,0.53906c0.71484,0 1.42969,-0.17969 2.07031,-0.53906l16.83984,-9.46484c1.28906,-0.72266 2.08984,-2.07812 2.08984,-3.53125v-18.92969c0,-1.45312 -0.80078,-2.80859 -2.08984,-3.53125zM25,37c-6.61719,0 -12,-5.38281 -12,-12c0,-6.61719 5.38281,-12 12,-12c3.78125,0 7.27344,1.75391 9.54297,4.74219l-4.38281,2.53516c-1.31641,-1.44141 -3.1875,-2.27734 -5.16016,-2.27734c-3.85937,0 -7,3.14063 -7,7c0,3.85938 3.14063,7 7,7c1.97266,0 3.84375,-0.83594 5.16016,-2.27734l4.38281,2.53516c-2.26953,2.98828 -5.76172,4.74219 -9.54297,4.74219zM37,26h-2v2h-2v-2h-2v-2h2v-2h2v2h2zM44,26h-2v2h-2v-2h-2v-2h2v-2h2v2h2z"></path></g></g>
+                    </svg>
+                <label>C/C++</label>
+            </div>    
+            <div class="gallery-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-0.71484,0 -1.42969,0.17969 -2.06641,0.53906l-16.84375,9.46484c-1.28906,0.72266 -2.08984,2.07813 -2.08984,3.53125v18.92969c0,1.45313 0.80078,2.80859 2.08984,3.53125l16.84375,9.46484c0.63672,0.35938 1.35156,0.53906 2.06641,0.53906c0.71484,0 1.42969,-0.17969 2.06641,-0.53906l16.84375,-9.46094c1.28906,-0.72656 2.08984,-2.08203 2.08984,-3.53516v-18.92969c0,-1.45312 -0.80078,-2.80859 -2.08984,-3.53125l-16.84375,-9.46484c-0.63672,-0.35937 -1.35156,-0.53906 -2.06641,-0.53906zM25,13c3.78125,0 7.27734,1.75391 9.54297,4.73828l-4.38281,2.53906c-1.31641,-1.44141 -3.1875,-2.27734 -5.16016,-2.27734c-3.85937,0 -7,3.14063 -7,7c0,3.85938 3.14063,7 7,7c1.97266,0 3.84375,-0.83594 5.16016,-2.27734l4.38281,2.53906c-2.26562,2.98438 -5.76172,4.73828 -9.54297,4.73828c-6.61719,0 -12,-5.38281 -12,-12c0,-6.61719 5.38281,-12 12,-12zM35,20h2v2h2v-2h2v2h2v2h-2v2h2v2h-2v2h-2v-2h-2v2h-2v-2h-2v-2h2v-2h-2v-2h2zM37,24v2h2v-2z"></path></g></g>
+                    </svg>
+                <label>C#</label>
+            </div>    
+            <div class="gallery-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#dddddd" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M28.1875,0c2.75,6.36328 -9.85937,10.29297 -11.03125,15.59375c-1.07422,4.87109 7.49219,10.53125 7.5,10.53125c-1.30078,-2.01562 -2.25781,-3.67578 -3.5625,-6.8125c-2.20703,-5.30469 13.44141,-10.10547 7.09375,-19.3125zM36.5625,8.8125c0,0 -11.0625,0.71094 -11.625,7.78125c-0.25,3.14844 2.91016,4.80469 3,7.09375c0.07422,1.87109 -1.875,3.4375 -1.875,3.4375c0,0 3.54688,-0.67578 4.65625,-3.53125c1.23047,-3.16797 -2.39844,-5.30859 -2.03125,-7.84375c0.35156,-2.42578 7.875,-6.9375 7.875,-6.9375zM19.1875,25.15625c0,0 -10.125,-0.14453 -10.125,2.71875c0,2.99219 13.25391,3.21484 22.71875,1.375c0,0 2.51563,-1.73047 3.1875,-2.375c-6.20312,1.26563 -20.34375,1.40625 -20.34375,0.3125c0,-1.00781 4.5625,-2.03125 4.5625,-2.03125zM38.65625,25.15625c-0.99219,0.07813 -2.0625,0.46094 -3.03125,1.15625c2.28125,-0.49219 4.21875,0.92188 4.21875,2.53125c0,3.625 -5.25,7.03125 -5.25,7.03125c0,0 8.125,-0.92187 8.125,-6.875c0,-2.70312 -1.87891,-4.01562 -4.0625,-3.84375zM16.75,30.71875c-1.55469,0 -3.875,1.21875 -3.875,2.375c0,2.32422 11.6875,4.11328 20.34375,0.71875l-3,-1.84375c-5.86719,1.87891 -16.67187,1.26563 -13.46875,-1.25zM18.1875,35.9375c-2.12891,0 -3.53125,1.28516 -3.53125,2.25c0,2.98438 12.71484,3.28516 17.75,0.25l-3.1875,-2.03125c-3.76172,1.58984 -13.20312,1.83203 -11.03125,-0.46875zM11.09375,38.625c-3.46875,-0.07031 -5.71875,1.48828 -5.71875,2.78125c0,6.875 35.5,6.55859 35.5,-0.46875c0,-1.16797 -1.34766,-1.73437 -1.84375,-2c2.90234,6.71875 -29.0625,6.18359 -29.0625,2.21875c0,-0.90234 2.35156,-1.76562 4.53125,-1.34375l-1.84375,-1.0625c-0.54297,-0.08203 -1.06641,-0.11328 -1.5625,-0.125zM44.625,43.25c-5.39844,5.11719 -19.07812,6.97266 -32.84375,3.8125c13.76172,5.63281 32.77734,2.47266 32.84375,-3.8125z"></path></g></g>
+                    </svg>
+                <label>Java</label>
+            </div>    
+            <div class="gallery-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="none" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path transform="scale(2.56,2.56)" d="M91.652,73.85c-0.383,0.235 -0.872,0.189 -1.202,-0.113c-3.667,-3.357 -14.399,-11.88 -19.891,-11.01c-3.903,0.617 -6.5,4.633 -9.508,9.283c-2.052,3.172 -4.378,6.767 -7.493,9.848c-5.166,5.108 -10.164,6.086 -10.375,6.125c-0.061,0.012 -0.121,0.017 -0.183,0.017c-0.23,0 -0.457,-0.08 -0.638,-0.23c-0.228,-0.189 -0.361,-0.471 -0.362,-0.767c0,-0.141 -0.141,-14.159 -8.199,-18.993c-4.158,-2.495 -8.744,-1.9 -8.789,-1.894c-0.253,0.034 -0.499,-0.034 -0.699,-0.171l-0.003,0.005l-17.875,-12.251c-0.306,-0.21 -0.471,-0.572 -0.428,-0.94c0.043,-0.368 0.286,-0.683 0.632,-0.817l23.419,-9.067c0.527,-0.756 2.165,-3.012 4.453,-5.299c1.9,-1.901 3.607,-2.85 5.415,-3.854c0.9,-0.5 1.831,-1.017 2.865,-1.69c2.383,-1.55 4.727,-5.332 7.208,-9.336c3.868,-6.242 7.868,-12.696 13.251,-12.696c10.61,0 27.002,56.305 28.837,62.725c0.122,0.431 -0.056,0.89 -0.435,1.125z" id="strokeMainSVG" fill="#dddddd" stroke="#dddddd" stroke-linecap="butt" stroke-linejoin="round"></path><g transform="scale(2.56,2.56)"><path d="M92.087,72.725c-1.835,-6.42 -18.227,-62.725 -28.837,-62.725c-5.383,0 -9.383,6.454 -13.251,12.696c-2.481,4.004 -4.825,7.786 -7.208,9.336c-1.034,0.673 -1.965,1.19 -2.865,1.69c-1.808,1.004 -3.515,1.953 -5.415,3.854c-2.288,2.287 -3.926,4.543 -4.453,5.299l-23.419,9.067c-0.346,0.134 -0.589,0.449 -0.632,0.817c-0.043,0.368 0.122,0.73 0.428,0.94l17.875,12.251l0.003,-0.005c0.2,0.137 0.446,0.205 0.699,0.171c0.045,-0.006 4.631,-0.601 8.789,1.894c8.058,4.834 8.199,18.852 8.199,18.993c0.001,0.296 0.134,0.578 0.362,0.767c0.181,0.15 0.408,0.23 0.638,0.23c0.062,0 0.122,-0.005 0.183,-0.017c0.211,-0.039 5.209,-1.017 10.375,-6.125c3.115,-3.081 5.441,-6.676 7.493,-9.848c3.008,-4.65 5.605,-8.666 9.508,-9.283c5.492,-0.87 16.224,7.653 19.891,11.01c0.33,0.302 0.819,0.348 1.202,0.113c0.379,-0.235 0.557,-0.694 0.435,-1.125zM35.925,38.99c1.703,-1.703 3.218,-2.545 4.973,-3.52c0.93,-0.517 1.892,-1.051 2.984,-1.762c2.757,-1.793 5.215,-5.76 7.817,-9.958c1.683,-2.715 3.393,-5.466 5.176,-7.627c-2.265,4.03 -4.73,9.912 -7.708,17.257c-2.745,6.77 -5.337,13.164 -7.618,16.675c-0.048,0.074 -0.099,0.145 -0.147,0.218l-9.308,-6.802c0.717,-0.978 2.085,-2.736 3.831,-4.481zM24.967,63.975l-15.837,-10.852l21.428,-8.297l9.681,7.074c-5.316,6.924 -13.23,11.08 -15.272,12.075zM70.246,60.751c-4.784,0.757 -7.606,5.12 -10.874,10.172c-1.997,3.086 -4.26,6.584 -7.221,9.512c-3.299,3.262 -6.543,4.69 -8.2,5.255c-0.23,-3.82 -1.553,-14.855 -9.121,-19.396c-2.099,-1.259 -4.268,-1.834 -6.055,-2.08c3.927,-2.273 10.28,-6.65 14.451,-13.071c2.385,-3.672 5.012,-10.152 7.794,-17.013c3.787,-9.339 8.972,-22.13 12.23,-22.13c6.551,0 18.981,34.33 25.978,58.05c-4.378,-3.597 -13.296,-10.201 -18.982,-9.299z" fill="#bbbbbb" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M57.765,26.25c-0.067,0 -0.136,-0.014 -0.201,-0.042c-0.253,-0.111 -0.367,-0.406 -0.257,-0.659c1.458,-3.323 2.675,-5.833 3.721,-7.671c0.136,-0.24 0.44,-0.325 0.682,-0.188c0.24,0.136 0.324,0.442 0.188,0.682c-1.028,1.809 -2.23,4.288 -3.674,7.579c-0.083,0.187 -0.267,0.299 -0.459,0.299z" fill="#bbbbbb" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M56.213,29.875c-0.064,0 -0.131,-0.013 -0.193,-0.039c-0.255,-0.107 -0.375,-0.4 -0.268,-0.655l0.423,-1.001c0.107,-0.255 0.399,-0.372 0.655,-0.266c0.254,0.108 0.373,0.401 0.265,0.655l-0.421,0.999c-0.08,0.192 -0.266,0.307 -0.461,0.307z" fill="#bbbbbb" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M46.432,81.686c-0.069,0 -0.139,-0.014 -0.204,-0.043c-0.152,-0.068 -0.261,-0.208 -0.289,-0.373c-0.974,-5.706 -3.469,-13.307 -9.822,-17.119c-0.249,-0.149 -0.499,-0.291 -0.748,-0.424c-0.151,-0.081 -0.25,-0.232 -0.264,-0.403c-0.013,-0.17 0.063,-0.336 0.199,-0.438c4.226,-3.158 7.597,-6.65 10.02,-10.38c2.516,-3.874 5.186,-10.461 8.014,-17.436c0.403,-0.997 0.824,-2.014 1.282,-3.123l0.419,-1.013c0.105,-0.255 0.397,-0.374 0.652,-0.271c0.256,0.105 0.377,0.398 0.271,0.653l-0.418,1.013c-0.458,1.107 -0.878,2.123 -1.281,3.117c-2.846,7.02 -5.533,13.65 -8.102,17.604c-2.368,3.647 -5.612,7.067 -9.648,10.173c0.039,0.023 0.078,0.046 0.117,0.07c6.401,3.84 9.062,11.245 10.16,17.059c1.012,-0.693 1.984,-1.5 2.9,-2.406c1.135,-1.122 2.248,-2.428 3.405,-3.994c0.166,-0.222 0.48,-0.268 0.699,-0.104c0.223,0.164 0.27,0.477 0.105,0.699c-1.188,1.607 -2.335,2.952 -3.507,4.11c-1.154,1.142 -2.397,2.135 -3.695,2.952c-0.08,0.051 -0.173,0.077 -0.265,0.077z" fill="#bbbbbb" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M58.186,67.25c-0.445,0.671 -0.888,1.355 -1.334,2.044" fill="#ffffff" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M56.853,69.794c-0.094,0 -0.188,-0.026 -0.271,-0.08c-0.231,-0.15 -0.298,-0.459 -0.148,-0.691c0.446,-0.691 0.89,-1.376 1.338,-2.049c0.152,-0.231 0.463,-0.292 0.693,-0.14c0.229,0.153 0.292,0.463 0.139,0.693c-0.444,0.669 -0.886,1.352 -1.33,2.039c-0.097,0.147 -0.258,0.228 -0.421,0.228z" fill="#bbbbbb" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M59.651,65.625c-0.102,0 -0.204,-0.031 -0.293,-0.095c-0.224,-0.162 -0.274,-0.475 -0.112,-0.698c2.378,-3.286 5.479,-6.751 10.453,-7.537c3.479,-0.555 7.834,0.723 13.106,3.852c-2.395,-7.483 -4.786,-14.379 -7.116,-20.514c-1.432,-3.77 -2.826,-7.213 -4.146,-10.234c-0.11,-0.253 0.005,-0.548 0.258,-0.658c0.254,-0.111 0.548,0.004 0.658,0.258c1.327,3.036 2.729,6.495 4.166,10.279c2.468,6.5 5.005,13.849 7.541,21.843c0.063,0.2 -0.005,0.418 -0.171,0.547c-0.165,0.128 -0.395,0.14 -0.571,0.028c-5.565,-3.497 -10.084,-4.964 -13.568,-4.413c-4.612,0.729 -7.542,4.017 -9.799,7.136c-0.098,0.134 -0.251,0.206 -0.406,0.206z" fill="#bbbbbb" stroke="none" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M14.875,53.25l10.5,7.375" fill="#ffffff" stroke="#bbbbbb" stroke-linecap="round" stroke-linejoin="round"></path></g></g>
+                    </svg>
+                <label>MATLAB/Scilab</label>
+            </div>    
+        </div>
+    </section>
+
+    <section id="technologies">
+        <h2>Technologies</h2>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <i class="fa-brands fa-git-alt"></i>
+                <label>Git/Github</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-brands fa-docker"></i>
+                <label>Docker</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-solid fa-gears"></i>
+                <label>ROS</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-solid fa-microchip"></i>
+                <label>Arduino/ESP32</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-brands fa-windows"></i>
+                <label>Windows</label>
+            </div>    
+            <div class="gallery-item">
+                <i class="fa-brands fa-linux"></i>
+                <label>Linux</label>
+            </div>    
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2>Some Projects on GitHub</h2>
+        <ul>
+            <li><a target="_blank" href="https://github.com/JadsonFaustino/PokemonGallery">Pokemon Gallery with JS</a></li>
+            <li><a target="_blank" href="https://github.com/JadsonFaustino/FaceAndEyeDetection">Face and Eye Detection in Python</a>
+            </li>
+            <li><a target="_blank" href="https://github.com/JadsonFaustino/EDA-Data-Science-Salary">Exploratory Data Analysis: Data
+                    Science Salary</a></li>
+            <li><a target="_blank" href="https://github.com/JadsonFaustino/Spiral-Data">Data Visualization: Spiral Data</a></li>
+            <li><a target="_blank" href="https://github.com/JadsonFaustino/Spherical-Clusters-with-kmean">Data Visualization:
+                    Spherical Clusters with K-Means in MATLAB</a></li>
+            <li><a target="_blank" href="https://github.com/JadsonFaustino/Security-Access-Control-System">Access Control System
+                    with Cards and Fingerprints using ESP32</a></li>
+        </ul>
+    </section>
+
+    <section id="social-networks">
+        <h2>Social Networks</h2>
+        <ul>
+            <li><a target="_blank" href="https://www.linkedin.com/in/jadson-faustino/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="https://github.com/JadsonFaustino"><i class="fa-brands fa-square-github"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/jadson.faustino/"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+    </section>
 
 	<footer>
-		<p>&copy; 2023 Jadson Faustino. All rights reserved.</p>
+		<p>&copy; <label id="year"></label> Jadson Faustino Mororó. All rights reserved.</p>
 	</footer>
 </body>
 
