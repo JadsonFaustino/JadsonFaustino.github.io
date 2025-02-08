@@ -1,0 +1,3 @@
+[submodule "ClueCard"]
+	path = ClueCard
+	url = https://github.com/JadsonFaustino/ClueCard.git
