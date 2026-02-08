@@ -1,3 +1,6 @@
 [submodule "ClueCard"]
 	path = ClueCard
 	url = https://github.com/JadsonFaustino/ClueCard.git
+[submodule "EstudosBiblicos"]
+	path = EstudosBiblicos
+	url = https://github.com/JadsonFaustino/estudos-biblicos.git
