@@ -11,9 +11,8 @@
     html { scroll-behavior: smooth; scroll-padding-top: 80px; }
     body { margin: 0; background: #e9edf3; color: #304568; font-family: Georgia, serif; }
     .toolbar { position: sticky; top: 0; z-index: 2; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px 22px; padding: 12px; background: #fafbfdf5; box-shadow: 0 2px 12px #30456818; }
-    button, .pdf { font: 14px system-ui, sans-serif; }
+    button { font: 14px system-ui, sans-serif; }
     button { padding: 10px 18px; border: 1px solid #41567b; border-radius: 24px; background: #41567b; color: white; cursor: pointer; }
-    .pdf { color: #304568; text-underline-offset: 4px; }
     main { max-width: 810px; margin: 18px auto; }
     .page { position: relative; margin: 0 0 18px; box-shadow: 0 4px 24px #30456818; }
     .page img { display: block; width: 100%; height: auto; }
@@ -31,7 +30,6 @@
 <body>
   <header class="toolbar" aria-label="Controles do convite">
     <button id="music-toggle" type="button" aria-controls="music" aria-pressed="false">♫ Tocar música</button>
-    <a class="pdf" href="CONVITE%20J%26J%20%281%29.pdf" target="_blank" rel="noopener">Abrir PDF original</a>
     <span id="music-status" class="sr-only" role="status" aria-live="polite"></span>
   </header>
   <main aria-label="Convite de casamento de Jaqueline e Jadson">
