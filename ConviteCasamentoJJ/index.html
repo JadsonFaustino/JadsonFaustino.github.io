@@ -14,9 +14,10 @@
     button { font: 14px system-ui, sans-serif; }
     button { padding: 10px 18px; border: 1px solid #41567b; border-radius: 24px; background: #41567b; color: white; cursor: pointer; }
     main { max-width: 810px; margin: 18px auto; }
-    .guest { padding: 24px 20px; margin-bottom: 18px; text-align: center; background: #fafbfd; border: 1px solid #41567b26; }
-    .guest p { margin: 0; line-height: 1.5; }
-    .guest h2 { margin: 8px 0; font-size: clamp(26px, 6vw, 40px); font-weight: normal; overflow-wrap: anywhere; }
+    .cover { container-type: inline-size; }
+    .guest { position: absolute; top: 25%; left: 15%; width: 70%; transform: translateY(-50%); text-align: center; color: #304568; pointer-events: none; }
+    .guest p { margin: 0; font-size: clamp(10px, 2.5cqw, 20px); line-height: 1.5; }
+    .guest h2 { margin: 1cqw 0 0; font-size: clamp(16px, 4.5cqw, 36px); line-height: 1.15; font-weight: normal; font-style: italic; overflow-wrap: anywhere; }
     .page { position: relative; margin: 0 0 18px; box-shadow: 0 4px 24px #30456818; }
     .page img { display: block; width: 100%; height: auto; }
     .hotspot { position: absolute; display: block; border-radius: 4px; }
@@ -39,13 +40,13 @@
   </header>
   <main aria-label="Convite de casamento de Jaqueline e Jadson">
     <h1 class="sr-only">Casamento de Jaqueline e Jadson</h1>
-    <section class="guest" id="guest" aria-labelledby="guest-name" hidden>
-      <p>Um convite especial para</p>
-      <h2 id="guest-name"></h2>
-    </section>
     <!-- Páginas renderizadas de CONVITE J&amp;J (4).pdf. Os links mantêm suas posições proporcionais. -->
-    <section class="page" aria-label="Capa do convite">
+    <section class="page cover" aria-label="Capa do convite">
       <img src="pagina-1.webp" width="1013" height="1800" alt="O início do nosso para sempre… Clique no selo para abrir o convite." fetchpriority="high">
+      <section class="guest" id="guest" aria-labelledby="guest-name" hidden>
+        <p>Um convite especial para</p>
+        <h2 id="guest-name"></h2>
+      </section>
       <a class="hotspot open" href="#convite" aria-label="Abrir a segunda página do convite"></a>
     </section>
     <section class="page" id="convite" aria-label="Detalhes do casamento" tabindex="-1">
@@ -61,8 +62,8 @@
   <footer>Com carinho, Jaqueline &amp; Jadson</footer>
   <audio id="music" src="background-sound.mpeg" autoplay loop preload="metadata"></audio>
   <script>
-    // Exemplo: ?nome=Ana%20e%20Jo%C3%A3o
-    const guestName = (new URLSearchParams(window.location.search).get('nome') || '').trim();
+    // Exemplo: ?n=Ana%20e%20Jo%C3%A3o
+    const guestName = (new URLSearchParams(window.location.search).get('n') || '').trim();
     if (guestName) {
       document.getElementById('guest-name').textContent = guestName;
       document.getElementById('guest').hidden = false;
